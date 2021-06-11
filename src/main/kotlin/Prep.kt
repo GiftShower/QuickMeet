@@ -12,7 +12,7 @@ class Prep {
         fil = File("$dataFolder\\Autoenter\\data.toml")
         val folder = File("$dataFolder\\Autoenter")
         try {
-            if(!folder.exists()) folder.mkdirs() //폴더 생성 <- 이새끼가 문제네 , 이제 될듯 , 니 파일 다시 안썼잖아
+            if(!folder.exists()) folder.mkdirs() //폴더 생성
             val success = fil.exists()
             if (success) {
                 println("Failed to create datafile. Already Exists.")
